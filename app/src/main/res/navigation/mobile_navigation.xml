@@ -51,10 +51,33 @@
         android:id="@+id/twoFragment"
         android:name="com.example.forumnavigator.TwoFragment"
         android:label="fragment_two"
-        tools:layout="@layout/fragment_two" />
+        tools:layout="@layout/fragment_two" >
+        <action
+            android:id="@+id/action_twoFragment_to_fourFragment"
+            app:destination="@id/fourFragment"
+            app:popUpTo="@+id/nav_home" />
+    </fragment>
     <fragment
         android:id="@+id/oneFragment"
         android:name="com.example.forumnavigator.ui.home.OneFragment"
         android:label="one_fragment"
-        tools:layout="@layout/one_fragment" />
+        tools:layout="@layout/one_fragment" >
+        <action
+            android:id="@+id/action_oneFragment_to_threeFragment"
+            app:destination="@id/threeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fourFragment"
+        android:name="com.example.forumnavigator.FourFragment"
+        android:label="fragment_four"
+        tools:layout="@layout/fragment_four" />
+    <fragment
+        android:id="@+id/threeFragment"
+        android:name="com.example.forumnavigator.ThreeFragment"
+        android:label="fragment_three"
+        tools:layout="@layout/fragment_three" >
+        <action
+            android:id="@+id/action_threeFragment_to_nav_send2"
+            app:destination="@id/nav_send" />
+    </fragment>
 </navigation>

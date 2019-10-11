@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
-    tools:context=".ui.home.OneFragment">
+    android:background="@color/colorThree"
+    tools:context=".ThreeFragment">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="One"
+        android:text="Three"
         android:textColor="#FFF"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,14 +21,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonToThree"
+        android:id="@+id/buttonToNavSend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/colorThree"
-        android:text="Three"
-        android:textColor="#FFF"
+        android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 </androidx.constraintlayout.widget.ConstraintLayout>
